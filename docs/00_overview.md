@@ -173,8 +173,12 @@ docs/
 ├── 05_agency.md
 ├── 06_alignment.md
 ├── 07_self_modification.md
-├── 08_relationship_to_existing_work.md
-└── 09_open_problems.md
+├── 08_the_cget_objective.md
+├── 09_falsifiable_predictions.md
+├── 10_relationship_to_existing_work.mdopen_problems.md
+├── 11_examples_and_case_studies.md
+└── 12_open_problems
+
 ```
 
 The repository is intended to progress from high-level concepts toward increasingly formal mathematical development.
