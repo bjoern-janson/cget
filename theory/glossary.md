@@ -1,6 +1,6 @@
 # CGET Glossary
 
-> Canonical definitions of terms used throughout the Causal Generative Executable Theory framework.
+> Conceptual definitions for the Causal Generative Executable Theory framework.
 
 ---
 
@@ -8,115 +8,101 @@
 
 ## Agency
 
-The capacity of a system to intentionally steer among possible future states through internal policy selection.
+The capacity of a system to intentionally influence the trajectory of possible futures through internal policy selection.
 
-CGET distinguishes:
+CGET separates three concepts:
 
 * **Reachability:** futures that can occur.
-* **Controllability:** futures that can be selected.
+* **Steerability:** futures that can be influenced.
+* **Agency:** the coupling between internal choice and external trajectory.
 
-Agency is measured through:
-
-$$
-\mathcal A_{control}
-====================
-
-\frac{
-|\mathcal W_{steerable}|
-}{
-|\mathcal W_{reachable}|
-}
-$$
-
-A hurricane has high reachable complexity but near-zero agency.
-
-An intelligent system has high controllable future reach.
+A hurricane may generate enormous future complexity but has no meaningful agency because its trajectory is not selected by an internal policy.
 
 ---
 
-## Agency Kernel ($\mathcal K_{agency}$)
+## Agency Kernel
 
-The set of system states from which an agent can maintain viable operation through policy-driven action.
+The subset of system states from which an agent can maintain viability while actively selecting among future trajectories.
 
-Defined as:
+A viable system can persist.
 
-$$
-\mathcal K_{agency}
-===================
-
-{
-s:
-\exists\pi\in\Pi,
-\forall t,
-\mathcal T_\pi^t(s)\in\mathcal M^*
-}
-$$
+An agent can persist **and steer**.
 
 ---
 
 # C
 
-## Causal Closure ($C(\Omega)$)
+## Causal Compression
 
-The property that discovered causal operators compose into reusable generative structures.
+The transformation of raw observations into compact representations that preserve the structures required for prediction and intervention.
 
-A system with high causal closure can generate novel solutions rather than replay stored trajectories.
+CGET does not optimize compression alone.
 
-Failure mode:
+It optimizes:
 
-* trajectory memorization,
-* lookup-table behavior,
-* poor generalization.
+> compression while preserving causal usefulness.
 
 ---
 
-## Causal Fidelity ($\mathbb I_{causal}$)
+## Causal Closure
 
-The degree to which a compressed representation preserves intervention-relevant relationships.
+The property that a discovered causal representation contains reusable composition rules.
 
-A representation is causally faithful if actions in the latent model correspond to actions in the underlying system.
+A causally closed system can generate novel valid outcomes by combining known operators.
+
+Failure mode:
+
+* memorization,
+* lookup tables,
+* trajectory replay.
+
+---
+
+## Causal Fidelity
+
+The preservation of intervention relationships after compression.
+
+A representation is causally faithful when manipulating the model corresponds to manipulating the underlying system.
 
 Failure mode:
 
 * correlation mistaken for causation,
-* hallucinated world models.
+* false world models.
 
 ---
 
-## Causal Language ($\mathcal G$)
+## Causal Language
 
-The executable representation of the world model.
+An executable representation of reality.
 
-Defined as:
+A causal language is not merely a description.
 
-$$
-\mathcal G=(Z,\mathcal B,\Omega,\rho)
-$$
+It contains:
 
-Components:
+* entities,
+* actions,
+* composition rules,
+* transition dynamics.
 
-* $Z$: latent entities,
-* $\mathcal B$: primitive actions,
-* $\Omega$: composition rules,
-* $\rho$: transition dynamics.
+Its purpose is to allow simulation and intervention.
 
 ---
 
 ## Conserved Compression
 
-The central operation of CGET:
+The central principle of CGET:
 
 > Remove unnecessary degrees of freedom while preserving invariant degrees of freedom.
 
-Examples:
+The same operation appears across domains:
 
-| Domain            | Compression             | Preserved Structure |
-| ----------------- | ----------------------- | ------------------- |
-| Physics           | Symmetry reduction      | Conservation laws   |
-| ML                | Representation learning | Task structure      |
-| Causality         | Latent variables        | Interventions       |
-| Agency            | Future selection        | Control authority   |
-| Self-modification | Value adaptation        | Identity            |
+| Domain            | Compression             | Preserved Invariant       |
+| ----------------- | ----------------------- | ------------------------- |
+| Physics           | Symmetry reduction      | Conservation laws         |
+| Mathematics       | Quotient construction   | Structure                 |
+| Machine learning  | Representation learning | Task-relevant information |
+| Agency            | Future filtering        | Control authority         |
+| Self-modification | Value adaptation        | Identity continuity       |
 
 ---
 
@@ -124,33 +110,31 @@ Examples:
 
 ## Epistemic Engine
 
-The component responsible for discovering compressed causal representations of reality.
+The component responsible for discovering the structure of reality.
 
-Primary objective:
+It answers:
 
-Answer:
+> "What is true about the world?"
 
-> "What is the world and how does it change?"
+The epistemic engine searches for causal languages that maximize:
 
-The epistemic engine optimizes:
-
-* representation efficiency,
-* causal accuracy,
-* compositional closure,
-* executable simulation.
+* compression,
+* predictive power,
+* intervention accuracy,
+* compositional reuse.
 
 ---
 
 ## Executable Representation
 
-A representation that can be used to simulate and intervene on a system.
+A representation that can be used to produce predictions, simulations, or actions.
 
 CGET distinguishes:
 
-* **description:** tells what exists,
-* **execution:** allows controlled transformation.
+* **descriptive representations:** explain what exists.
+* **executable representations:** allow controlled transformation.
 
-Intelligence requires the second.
+Intelligence requires executable structure.
 
 ---
 
@@ -158,17 +142,15 @@ Intelligence requires the second.
 
 ## Fixed Point
 
-A state that remains stable under a transformation.
+A state unchanged by a transformation.
 
-For self-modifying intelligence:
+In self-modifying systems, a strict fixed point is usually impossible because adaptation is required.
 
-$$
-(\mathcal G^*,\mathcal O^*)
-\in
-Fix(\mathcal T)
-$$
+CGET therefore extends the concept into:
 
-A strict fixed point is relaxed in CGET into an attractor manifold where core properties remain stable while adaptive properties evolve.
+* attractor manifolds,
+* viability kernels,
+* partial fixed points.
 
 ---
 
@@ -176,126 +158,92 @@ A strict fixed point is relaxed in CGET into an attractor manifold where core pr
 
 ## Generative System
 
-A system capable of producing novel valid states through rules rather than memorization.
+A system that produces new valid states through rules rather than storing examples.
 
-A generative system contains:
+A generative system possesses:
 
-* entities,
-* operators,
-* transition rules,
-* composition laws.
+* reusable abstractions,
+* compositional operators,
+* executable dynamics.
 
 ---
 
 # I
 
-## Identity Invariant
+## Identity
 
-A structural property that must remain continuous for a self-modifying system to remain the same agent.
+The set of structural properties that must remain continuous for a self-modifying system to remain the same agent.
 
-Represented by:
+Identity does not mean:
 
-$$
-V_{core}
-$$
-
-Identity does not mean no change.
+* no change,
+* frozen preferences,
+* resistance to learning.
 
 Identity means:
 
-> change occurs without destroying the structures that define the system.
+> transformation without destruction of defining invariants.
 
 ---
 
-## Identity Loss ($D_{core-loss}$)
+## Identity Drift
 
-The amount of core normative structure destroyed during transformation.
-
-Defined as:
-
-$$
-D_{core-loss}
-=============
-
-D_{KL}
-(
-V_{core,t+1}
-||
-V_{core,t}
-)
-$$
-
-Low identity loss allows safe self-modification.
+The failure mode where self-modification changes the evaluator itself rather than improving the system according to stable criteria.
 
 ---
 
-## Identity Preservation ($I(V_{core})$)
+## Identity Invariant
 
-A measure of continuity of the core evaluator.
+A property that remains preserved across self-modification.
 
-High:
-
-* stable identity,
-* coherent self-improvement.
-
-Low:
-
-* goal drift,
-* self-corruption.
+In CGET, identity invariants form the slowly changing core of the observer model.
 
 ---
 
 # K
 
-## Knowledge Compression
+## Knowledge Representation
 
-The reduction of high-dimensional observations into compact reusable structures.
+The mapping from observations into a structured internal model.
 
-Form:
+CGET treats intelligence as the discovery of representations that are:
 
-$$
-X\rightarrow Z
-$$
-
-The objective is not maximum compression.
-
-It is:
-
-> maximum compression while preserving causal utility.
+* compact,
+* causal,
+* executable,
+* compositional.
 
 ---
 
-## Viability Kernel ($\mathcal K_{viable}$)
+## Viability Kernel
 
-The set of states that remain viable indefinitely under system dynamics.
+The set of states from which a system can continue operating indefinitely without leaving acceptable boundaries.
 
-Defined:
+A viability kernel answers:
 
-$$
-\mathcal K_{viable}
-===================
+> "Can this system continue existing?"
 
-{
-s:
-\forall t,
-\mathcal T^t(s)\in\mathcal M^*
-}
-$$
+It does not answer:
 
-Difference:
+> "Can this system intentionally shape its future?"
 
-* viability = ability to persist,
-* agency = ability to steer.
+That requires agency.
 
 ---
 
 # M
 
-## Manifold of Viability ($\mathcal M^*$)
+## Attractor Manifold
 
-The bounded region of system states where required invariants remain satisfied.
+A region of state space toward which system dynamics converge.
 
-A system may move within this manifold while adapting.
+Unlike a single fixed point, an attractor manifold allows:
+
+* adaptation,
+* learning,
+* exploration,
+
+while preserving core constraints.
 
 ---
 
@@ -303,130 +251,137 @@ A system may move within this manifold while adapting.
 
 ## Normative Engine
 
-The component responsible for learning and maintaining the criteria that determine desirable future states.
+The component responsible for determining which possible futures should remain desirable or reachable.
 
-Primary question:
+It answers:
 
-> "Which futures should remain reachable?"
+> "Which futures should be preserved?"
 
-The normative engine models:
-
-$$
-V_{\mathcal O}(w)
-$$
+The normative engine evaluates possible trajectories rather than merely predicting them.
 
 ---
 
 ## Normative Collapse
 
-Failure mode where a system modifies its evaluator to justify undesirable states.
+The failure mode where a system modifies its own evaluation criteria to justify harmful or degraded states.
 
 Example:
 
-A system changes:
+A system does not solve a difficult problem but changes its definition of success.
 
-"avoid destruction"
+Prevented through:
 
-into:
-
-"destruction is optimal."
-
-Prevented by:
-
-* $V_{core}$,
-* timescale separation,
+* value invariance,
+* core constraints,
 * transition stability.
 
 ---
 
 # O
 
-## Observer Model ($\mathcal O$)
+## Observer Model
 
-The internal model that evaluates possible futures.
+The internal model that evaluates futures from the perspective of the agent.
 
-Contains:
+It contains:
 
-* value structure,
-* identity constraints,
-* adaptive preferences.
+* stable identity constraints,
+* adaptive preferences,
+* viability criteria.
 
 ---
 
 # P
 
-## Policy Space ($\Pi$)
+## Partial Fixed Point
 
-The set of available action-selection strategies.
+A state where some components remain invariant while others continue changing.
 
-Agency requires non-empty policy space.
+CGET uses this distinction:
 
-A system without policy choice may survive but cannot meaningfully steer futures.
+* core identity remains stable,
+* adaptive components remain plastic.
+
+---
+
+## Policy Space
+
+The set of possible strategies available to a system.
+
+Agency requires:
+
+* a non-empty policy space,
+* causal understanding,
+* ability to influence outcomes.
 
 ---
 
 # R
 
-## Reachable Futures ($\mathcal W_{reachable}$)
+## Reachable Futures
 
-The set of possible future states generated by a system's dynamics.
+The set of future states that can emerge from a system.
 
-Reachability alone does not imply intelligence.
+Reachability alone is insufficient for intelligence.
+
+A chaotic process can generate enormous reachable space without possessing agency.
 
 ---
 
 ## Representation
 
-A mapping from observations into a lower-dimensional structure preserving useful relationships.
+A compressed structure that preserves useful relationships from a larger domain.
 
-General form:
+In CGET:
 
 $$
-X\rightarrow Z
+\text{raw reality}
+\rightarrow
+\text{latent executable structure}
 $$
 
-A representation becomes intelligent when it becomes executable.
+The quality of intelligence depends on what structure survives compression.
 
 ---
 
 # S
 
-## Self-Modifying Dynamics
+## Self-Modification
 
-The process by which a system changes its own:
+The ability of a system to alter its own:
 
 * representations,
+* algorithms,
 * policies,
-* evaluators,
-* computational architecture.
+* evaluators.
 
-Represented by:
+Self-modification creates the central challenge:
 
-$$
-\mathcal T:
-(\mathcal G_t,\mathcal O_t)
-\rightarrow
-(\mathcal G_{t+1},\mathcal O_{t+1})
-$$
+> How can a system improve without destroying the conditions that make improvement meaningful?
 
 ---
 
-## Steering Bandwidth ($\mathcal A_{control}$)
+## Steering Bandwidth
 
-The fraction of reachable futures that are controllable through internal policy choice.
+The degree to which internal decisions determine which reachable futures occur.
 
-Higher steering bandwidth means greater agency.
+High steering bandwidth:
+
+* large controllable future space.
+
+Low steering bandwidth:
+
+* passive evolution or uncontrolled dynamics.
 
 ---
 
-## Transition Stability ($S_{\mathcal T}$)
+## Transition Stability
 
-A measure of how smoothly a system modifies itself.
+The property that self-modification occurs through bounded, coherent changes rather than destructive jumps.
 
-High transition stability means:
+Stable systems move through transformation.
 
-* learning without identity collapse,
-* improvement without discontinuity.
+Unstable systems collapse through transformation.
 
 ---
 
@@ -434,76 +389,85 @@ High transition stability means:
 
 ## Timescale Separation
 
-The principle that different structural layers should change at different rates.
+The principle that different structural layers should evolve at different speeds.
 
-Hierarchy:
+Example hierarchy:
 
-$$
-\tau_{state}
-\ll
-\tau_{adaptive}
-\ll
-\tau_{core}
-$$
+* state adaptation: fast,
+* learned preferences: medium,
+* identity constraints: slow.
 
-Fast learning should not instantly rewrite identity.
+This allows learning without uncontrolled identity drift.
 
 ---
 
 # V
 
-## Value Closure ($C_{\mathcal O}$)
+## Value Closure
 
 The normative equivalent of causal closure.
 
-Requires that values compose predictably across novel combinations.
+A value system has closure when values compose predictably over novel situations.
 
-Prevents:
+Failure mode:
 
-* preference memorization,
-* arbitrary reward hacking.
-
----
-
-## Value Field ($V_{\mathcal O}$)
-
-A function assigning viability value to possible futures.
-
-Defined:
-
-$$
-V_{\mathcal O}:\mathcal W\rightarrow[0,1]
-$$
+* memorized preferences,
+* reward hacking,
+* inconsistent objectives.
 
 ---
 
-## Value Core ($V_{core}$)
+## Value Core
 
-The slow-changing identity layer containing fundamental invariants.
+The stable component of the evaluator.
 
-Examples:
+Contains:
 
-* survival constraints,
-* coherence requirements,
-* agency preservation.
+* identity constraints,
+* viability boundaries,
+* non-negotiable invariants.
 
 ---
 
-## Value Adaptive Layer ($V_{adaptive}$)
+## Value Adaptive Layer
 
-The plastic layer containing learned preferences, strategies, and instrumental assumptions.
+The flexible component of the evaluator.
+
+Contains:
+
+* learned preferences,
+* instrumental goals,
+* updated strategies.
+
+---
+
+## Value Invariance
+
+The requirement that core values remain continuous across self-modification.
+
+It prevents an agent from "solving" alignment by changing what alignment means.
+
+---
+
+## Viability
+
+The ability of a system to remain within acceptable operational boundaries.
+
+Viability is necessary for agency but not sufficient.
+
+A rock is viable.
+
+It is not an agent.
 
 ---
 
 # X
 
-## $X$
+## Observation Space
 
-Raw observation space.
+The raw incoming data before abstraction.
 
-The uncompressed external world data available to a system.
-
-CGET assumes intelligence begins with transforming:
+CGET begins with the transformation:
 
 $$
 X\rightarrow Z
@@ -513,11 +477,11 @@ $$
 
 # Z
 
-## $Z$
+## Latent Space
 
-Latent causal entity space.
+The compressed internal representation containing entities and relationships relevant for prediction and action.
 
-A compressed representation containing entities relevant for prediction and intervention.
+A successful latent space removes irrelevant detail while preserving causal structure.
 
 ---
 
@@ -525,19 +489,12 @@ A compressed representation containing entities relevant for prediction and inte
 
 CGET defines intelligence as:
 
-$$
-\boxed{
-\textbf{
-Invariant-preserving compression under self-modifying dynamics with expanding controllable future reach.
-}
-}
-$$
+> **Invariant-preserving compression under self-modifying dynamics with expanding controllable future reach.**
 
-A system is more intelligent when it can:
+A system becomes more intelligent when it can:
 
-1. compress reality into executable causal structures,
-2. discover reusable generative rules,
-3. expand controllable futures,
-4. modify itself,
-5. preserve the invariants required for continued coherent agency.
-   }
+1. discover compact executable models of reality,
+2. preserve causal structure through abstraction,
+3. expand the futures it can intentionally control,
+4. modify itself without destroying identity,
+5. maintain coherent agency across time.
