@@ -8,9 +8,9 @@ This document defines the progression from the current theoretical framework tow
 
 CGET proposes that intelligence can be studied as:
 
-[
+\[
 \textbf{Invariant-preserving compression under self-modifying dynamics}
-]
+\]
 
 A system becomes more intelligent when it can:
 
@@ -27,58 +27,57 @@ A system becomes more intelligent when it can:
 
 Core concepts:
 
-* Causal Language:
+- Causal Language:
 
-[
+\[
 \mathcal{G}=(Z,\mathcal{B},\Omega,\rho)
-]
+\]
 
-* Causal Closure:
+- Causal Closure:
 
-[
+\[
 C(\Omega)
-]
+\]
 
-* Value Closure:
+- Value Closure:
 
-[
+\[
 C_{\mathcal O}
-]
+\]
 
-* Core / Adaptive Value Separation:
+- Core / Adaptive Value Separation:
 
-[
+\[
 V_{\mathcal O}
-==============
-
+=
 V_{core}
 \oplus
 V_{adaptive}
-]
+\]
 
-* Viability Kernel:
+- Viability Kernel:
 
-[
+\[
 \mathcal K_{viable}
-]
+\]
 
-* Agency Kernel:
+- Agency Kernel:
 
-[
+\[
 \mathcal K_{agency}
-]
+\]
 
-* Counterfactual Steering Bandwidth:
+- Counterfactual Steering Bandwidth:
 
-[
+\[
 \mathcal A_{control}
-]
+\]
 
-* Transformation Intelligence Ratio:
+- Transformation Intelligence Ratio:
 
-[
+\[
 \Theta^*
-]
+\]
 
 ---
 
@@ -92,9 +91,9 @@ Test whether causal representations provide measurable advantages over trajector
 
 Initial benchmark:
 
-[
-MazeWorld
-]
+\[
+\text{MazeWorld}
+\]
 
 ## Agents
 
@@ -102,14 +101,14 @@ MazeWorld
 
 Tests:
 
-* raw exploration
-* uncontrolled future generation
+- raw exploration
+- uncontrolled future generation
 
 Expected:
 
-[
+\[
 \mathcal A_{control}\approx0
-]
+\]
 
 ---
 
@@ -117,12 +116,12 @@ Expected:
 
 Tests:
 
-* optimization without abstraction
+- optimization without abstraction
 
 Expected:
 
-* high immediate performance
-* low transfer ability
+- high immediate performance
+- low transfer ability
 
 ---
 
@@ -130,13 +129,13 @@ Expected:
 
 Tests:
 
-* learned transition operators
-* reusable causal representations
+- learned transition operators
+- reusable causal representations
 
 Expected:
 
-* improved transfer
-* higher steering bandwidth
+- improved transfer
+- higher steering bandwidth
 
 ---
 
@@ -148,10 +147,10 @@ Does a compact causal model outperform memorized policies under distribution shi
 
 Experiments:
 
-* New maze layouts
-* Different obstacle patterns
-* Changed action costs
-* Hidden environment rules
+- New maze layouts
+- Different obstacle patterns
+- Changed action costs
+- Hidden environment rules
 
 Success criterion:
 
@@ -167,32 +166,32 @@ Can a system improve itself while preserving identity constraints?
 
 Implement:
 
-[
+\[
 \mathcal T:
 (\mathcal G_t,\mathcal O_t)
 \rightarrow
 (\mathcal G_{t+1},\mathcal O_{t+1})
-]
+\]
 
 Measure:
 
-## Identity Preservation
+### Identity Preservation
 
-[
+\[
 I(V_{core})
-]
+\]
 
-## Transition Stability
+### Transition Stability
 
-[
+\[
 S_{\mathcal T}
-]
+\]
 
-## Agency Expansion
+### Agency Expansion
 
-[
+\[
 \Delta\mathcal A_{control}
-]
+\]
 
 ---
 
@@ -204,18 +203,18 @@ Move from static rewards toward dynamic viability modeling.
 
 Implement:
 
-[
+\[
 V_{\mathcal O}(w)
-]
+\]
 
 as a learned viability field.
 
 Test:
 
-* proxy correction
-* preference updates
-* value drift
-* boundary preservation
+- proxy correction
+- preference updates
+- value drift
+- boundary preservation
 
 ---
 
@@ -229,15 +228,15 @@ Test:
 
 ### Safe Adaptation
 
-[
+\[
 \Delta V_{adaptive}\neq0
-]
+\]
 
 while:
 
-[
+\[
 \Delta V_{core}\approx0
-]
+\]
 
 ---
 
@@ -245,11 +244,11 @@ while:
 
 Failure condition:
 
-[
+\[
 V_{core,t+1}
 \rightarrow
 V_{corrupted}
-]
+\]
 
 where catastrophic states become evaluated as optimal.
 
@@ -263,9 +262,9 @@ Potential research directions:
 
 Compare:
 
-* reward maximization
-* representation learning
-* viability-constrained agency
+- reward maximization
+- representation learning
+- viability-constrained agency
 
 ---
 
@@ -273,10 +272,10 @@ Compare:
 
 Study:
 
-* latent representations
-* tool use
-* reasoning chains
-* self-correction
+- latent representations
+- tool use
+- reasoning chains
+- self-correction
 
 ---
 
@@ -284,9 +283,9 @@ Study:
 
 Measure:
 
-* future search efficiency
-* controllable reach
-* identity stability
+- future search efficiency
+- controllable reach
+- identity stability
 
 ---
 
@@ -302,10 +301,10 @@ Can identity constraints be discovered, specified, or only approximated?
 
 Does a coherent value structure require:
 
-* consistency?
-* survival?
-* human preference alignment?
-* another invariant?
+- consistency?
+- survival?
+- human preference alignment?
+- another invariant?
 
 ---
 
@@ -319,15 +318,15 @@ Or are there additional primitives required for intelligence?
 
 Possible hypothesis:
 
-[
-Intelligence
+\[
+\text{Intelligence}
 \approx
-Compression
+\text{Compression}
 \times
-Control
+\text{Control}
 \times
-Invariant Preservation
-]
+\text{Invariant Preservation}
+\]
 
 ---
 
@@ -335,10 +334,10 @@ Invariant Preservation
 
 CGET aims to provide a mathematical language for studying systems that:
 
-* understand environments,
-* modify themselves,
-* maintain coherent identity,
-* and expand their influence over possible futures.
+- understand environments,
+- modify themselves,
+- maintain coherent identity,
+- and expand their influence over possible futures.
 
 The central research question:
 
