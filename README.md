@@ -12,18 +12,17 @@ The central claim:
 
 CGET treats intelligence not as prediction alone, optimization alone, or search alone, but as a coupled process:
 
-[
+$$
 \boxed{
 \text{Intelligence}
-===================
-
+=
 \text{Compression}
 +
 \text{Invariant Preservation}
 +
 \text{Controllable Counterfactual Reach}
 }
-]
+$$
 
 A sufficiently advanced intelligence must solve two symmetric problems:
 
@@ -36,7 +35,7 @@ A sufficiently advanced intelligence must solve two symmetric problems:
 
 CGET consists of two coupled discovery engines.
 
-```
+```text
                     EXPERIENCE
                         |
         ┌───────────────┴───────────────┐
@@ -57,7 +56,6 @@ CGET consists of two coupled discovery engines.
                         ▼
 
              BOUNDED CAUSAL COMPILER
-
 ```
 
 ---
@@ -72,10 +70,10 @@ The epistemic engine compresses raw observations into an executable causal langu
 
 where:
 
-* (Z) = latent causal entities
-* (B) = primitive operators/actions
-* (\Omega) = composition algebra
-* (\rho) = transition dynamics
+* $Z$ = latent causal entities
+* $B$ = primitive operators/actions
+* $\Omega$ = composition algebra
+* $\rho$ = transition dynamics
 
 The objective is not merely predicting observations.
 
