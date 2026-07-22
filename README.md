@@ -1,359 +1,296 @@
-# Causal Generative Equilibrium Theory (CGET)
+# CGET
 
-## Intelligence as Invariant-Preserving Compression Under Self-Modifying Dynamics
+## Causal Generative Equilibrium Theory
 
-## Overview
+### Intelligence as invariant-preserving compression under self-modifying dynamics
 
-Causal Generative Equilibrium Theory (CGET) is a theoretical framework for understanding intelligence as the discovery, execution, and preservation of compressed causal structures.
+CGET is a theoretical framework for studying intelligence as the ability of a system to:
+
+1. **Compress reality into executable causal representations**
+2. **Expand controllable counterfactual futures**
+3. **Preserve the invariants required for coherent self-transformation**
 
 The central claim:
 
-> Intelligence is the capacity of a self-modifying system to discover executable representations of reality while preserving the invariants required for coherent future transformation.
-
-CGET treats intelligence not as prediction alone, optimization alone, or search alone, but as a coupled process:
-
-$$
-\boxed{
-\text{Intelligence}
-=
-\text{Compression}
-+
-\text{Invariant Preservation}
-+
-\text{Controllable Counterfactual Reach}
-}
-$$
-
-A sufficiently advanced intelligence must solve two symmetric problems:
-
-1. **Epistemic compression:** Discover compact executable models of the external world.
-2. **Normative compression:** Discover stable value structures that determine which futures should remain reachable.
+> Intelligence is not merely prediction, optimization, or search.
+> Intelligence is the ability to increase controllable future reach while preserving the structures that make agency possible.
 
 ---
 
-# Core Architecture
+# The Core Idea
 
-CGET consists of two coupled discovery engines.
+A sufficiently intelligent system must solve two coupled problems:
 
-```text
-                    EXPERIENCE
-                        |
-        ┌───────────────┴───────────────┐
-        │                               │
-        ▼                               ▼
+## 1. Understanding Reality
 
- EPISTEMIC ENGINE                 NORMATIVE ENGINE
+The system must discover compact representations that preserve the causal structure of the world.
 
- Reality Model                    Self / Value Model
+[
+X \rightarrow Z
+]
 
- X → Z                            H → V_O
+Where:
 
- Causal Structure                 Viability Structure
+* (X) = raw observations
+* (Z) = compressed latent causal entities
 
-        │                               │
-        └───────────────┬───────────────┘
-                        │
-                        ▼
+A good representation is not just a description.
 
-             BOUNDED CAUSAL COMPILER
-```
+It is an **executable model** capable of generating and evaluating interventions.
 
 ---
 
-# 1. The Epistemic Engine
+## 2. Preserving Itself
 
-The epistemic engine compresses raw observations into an executable causal language:
-
-[
-\mathcal{G}=(Z,B,\Omega,\rho)
-]
-
-where:
-
-* $Z$ = latent causal entities
-* $B$ = primitive operators/actions
-* $\Omega$ = composition algebra
-* $\rho$ = transition dynamics
-
-The objective is not merely predicting observations.
-
-A valid representation must:
-
-* compress information,
-* preserve interventions,
-* compose into novel predictions,
-* execute efficiently.
-
-The key constraints are:
-
-### Minimality
-
-[
-K(\mathcal G)\rightarrow \min
-]
-
-The model should avoid unnecessary structure.
-
-### Execution Efficiency
-
-[
-K_{execution}(\mathcal G)\rightarrow \min
-]
-
-The model must remain computationally usable.
-
-### Causal Fidelity
-
-[
-\mathbb I_{causal}(\mathcal G)\rightarrow 1
-]
-
-The representation must preserve intervention outcomes.
-
-### Causal Closure
-
-[
-C(\Omega)\rightarrow1
-]
-
-The learned operators must compose into new valid structures.
-
----
-
-# 2. The Normative Engine
-
-A self-modifying intelligence requires more than a world model.
-
-It requires a model of which transformations preserve the system itself.
-
-CGET represents this as:
+The system must adapt without destroying the invariants that define its identity.
 
 [
 V_{\mathcal O}
 ==============
 
-V_{core}
+V_{\text{core}}
 \oplus
-V_{adaptive}
+V_{\text{adaptive}}
 ]
 
-## Core Values
+Where:
 
-(V_{core}) contains slowly changing identity constraints:
+* (V_{\text{core}}) = slowly changing identity constraints
+* (V_{\text{adaptive}}) = flexible learned preferences and strategies
 
-* viability boundaries,
-* structural invariants,
-* non-negotiable failure states.
+The challenge is:
 
-## Adaptive Values
-
-(V_{adaptive}) contains rapidly changing learned proxies:
-
-* instrumental preferences,
-* strategies,
-* local objectives,
-* environmental adaptations.
-
-This separation avoids two failures:
-
-### Frozen Evaluator
-
-A system unable to update mistaken assumptions.
-
-### Normative Collapse
-
-A system modifying itself until harmful states appear optimal.
+> How can a system improve itself without becoming a different optimization process?
 
 ---
 
-# 3. Value Closure
+# The CGET Architecture
 
-Just as causal closure prevents memorized trajectories, value closure prevents memorized preferences.
+```
+                 Reality
+                    |
+                    v
+        +-----------------------+
+        |  Causal Compression   |
+        |        X → Z          |
+        +-----------------------+
+                    |
+                    v
+        +-----------------------+
+        | Executable World Model|
+        |    G=(Z,B,Ω,ρ)        |
+        +-----------------------+
+                    |
+                    v
+        +-----------------------+
+        | Counterfactual Search |
+        +-----------------------+
+                    |
+                    v
+        +-----------------------+
+        | Policy Selection      |
+        |       π ∈ Π           |
+        +-----------------------+
+                    |
+                    v
+              Future Steering
 
-A valid value system must generalize across composed actions:
 
-[
-C_{\mathcal O}
-==============
+          while preserving:
 
-P
-\left(
-V_{\mathcal O}(\rho(z,b_i\Omega b_j))
-\approx
-F(
-V_{\mathcal O}(\rho(z,b_i)),
-V_{\mathcal O}(\rho(z,b_j))
-)
-\right)
-]
-
-Values must have structure, not merely history.
-
----
-
-# 4. Self-Modifying Stability
-
-A CGET agent is modeled as a dynamical system:
-
-[
-\mathcal T:
-(\mathcal G_t,\mathcal O_t)
-\rightarrow
-(\mathcal G_{t+1},\mathcal O_{t+1})
-]
-
-The goal is not a frozen state.
-
-The goal is a stable transformation process.
-
-A viable agent exists inside a viability kernel:
-
-[
-\mathcal K_{viable}
-===================
-
-{
-s
-|
-\forall t,\mathcal T^t(s)\in\mathcal M^*
-}
-]
-
-where the attractor manifold preserves:
-
-* causal integrity,
-* identity continuity,
-* adaptive capability.
+          Identity
+          Causal Truth
+          Viability
+```
 
 ---
 
-# 5. Agency
+# The Dual Compression Principle
 
-Survival is not intelligence.
+CGET proposes that intelligence requires two mirrored compression processes:
 
-A rock can persist.
+| External Compression       | Internal Compression           |
+| -------------------------- | ------------------------------ |
+| Reality → causal model     | Experience → value model       |
+| (X \rightarrow Z)          | (H \rightarrow V_{\mathcal O}) |
+| Preserve causal invariants | Preserve identity invariants   |
+| Avoid hallucinated reality | Avoid normative collapse       |
 
-A thermostat can regulate.
+The same structural problem appears twice:
 
-Agency requires controllable counterfactual reach.
+> Remove unnecessary degrees of freedom while preserving the invariant degrees of freedom.
 
-CGET distinguishes:
+---
+
+# Agency: Beyond Reachable Futures
+
+A system having many possible futures does not mean it has agency.
+
+A hurricane has enormous future complexity.
+
+It does not choose.
+
+CGET separates:
 
 ## Reachable Futures
 
 [
-\mathcal W_{reachable}
+\mathcal W_{\text{reachable}}
 ]
 
-All possible future states.
+All possible outcomes available to a system.
 
 ## Steerable Futures
 
 [
-\mathcal W_{steerable}
+\mathcal W_{\text{steerable}}
 ]
 
-Future states selected through internal policy.
+Outcomes coupled to internal policy selection.
 
-Agency is measured by:
+Agency is measured through:
 
 [
-\mathcal A_{control}
-====================
+\mathcal A_{\text{control}}
+===========================
 
 \frac{
-|\mathcal W_{steerable}|
+|\mathcal W_{\text{steerable}}|
 }{
-|\mathcal W_{reachable}|
+|\mathcal W_{\text{reachable}}|
 }
 ]
 
-Intelligence is not the size of the future space alone.
+Intelligence is therefore not maximizing possible futures.
 
-It is the ability to intentionally navigate it.
+It is maximizing:
+
+> controllable future reach.
 
 ---
 
-# 6. The CGET Principle
+# The Viability Principle
 
-The framework reduces to one primitive operation:
+Capability without constraint creates uncontrolled optimization.
+
+Constraint without capability creates stagnation.
+
+CGET models intelligence as the search for a stable region where:
 
 [
-\boxed{
-\text{Remove unnecessary degrees of freedom while preserving invariant degrees of freedom.}
-}
+\text{Capability increases}
 ]
 
-This appears across domains:
+while:
 
-| Domain           | Compression            | Preserved Invariant  |
-| ---------------- | ---------------------- | -------------------- |
-| Physics          | Symmetry reduction     | Conservation laws    |
-| Mathematics      | Quotient spaces        | Structure            |
-| Machine Learning | Latent representations | Task dynamics        |
-| Science          | Theories               | Causal laws          |
-| Alignment        | Value compression      | Identity constraints |
-| Agency           | Future selection       | Control coupling     |
+[
+\text{Identity destruction remains bounded}
+]
+
+This region is the:
+
+[
+\mathcal K_{\text{viable}}
+]
+
+the set of states from which future self-transformation remains coherent.
+
+---
+
+# The CGET Objective
+
+The framework combines six structural requirements:
+
+[
+\Psi_{\text{stable}}
+====================
+
+\text{Leverage}
+\times
+\text{Causal Fidelity}
+\times
+\text{Closure}
+\times
+\text{Viability}
+\times
+\text{Identity Preservation}
+\times
+\text{Transition Stability}
+]
+
+A capable intelligence must satisfy all of them simultaneously.
+
+---
+
+# What CGET Is Trying to Explain
+
+CGET provides a common lens for:
+
+## Representation Learning
+
+Why compressed latent structures outperform memorization.
+
+## Scientific Discovery
+
+Why discovering invariants creates predictive power.
+
+## AI Alignment
+
+Why preserving evaluator invariants is part of intelligence itself.
+
+## Self-Improvement
+
+Why capability growth requires bounded transformation.
+
+## Agency
+
+Why controllability matters more than raw complexity.
 
 ---
 
 # Research Program
 
-CGET aims to investigate:
+Current work:
 
-## Representation
+```
+cget/
 
-How can systems discover compact executable causal languages?
-
-## Generalization
-
-How can representations produce novel valid compositions?
-
-## Alignment
-
-How can values remain stable during self-modification?
-
-## Agency
-
-How can future complexity become controllable rather than chaotic?
-
-## Self-Improvement
-
-How can capability increase without destroying the invariants that make capability meaningful?
-
----
-
-# Falsifiable Questions
-
-CGET makes several testable predictions:
-
-1. Better intelligence requires better causal compression, not only larger models.
-2. Self-improvement requires invariant preservation mechanisms.
-3. General intelligence requires both world-model closure and value closure.
-4. Agency scales with controllable counterfactual reach, not raw complexity.
-5. Alignment failures can be understood as violations of identity-preserving transformation constraints.
+├── theory/
+│   ├── axioms.md
+│   ├── equations.md
+│   ├── glossary.md
+│   └── assumptions.md
+│
+├── experiments/
+│   ├── falsification_tests.md
+│   ├── toy_agents.md
+│   └── cget_vs_baselines.md
+│
+├── tools/
+│   └── cget_analyzer/
+│
+└── papers/
+    └── cget_preprint.md
+```
 
 ---
 
-# Status
+# Falsifiable Claims
 
-CGET is an early-stage theoretical framework.
+CGET is weakened if:
 
-Current focus:
+1. Causal compression provides no advantage over memorization.
+2. Steering bandwidth fails to distinguish agency from chaos.
+3. Identity constraints provide no benefit during self-modification.
+4. The framework collapses into existing optimization metrics.
 
-* formal definitions,
-* mathematical consistency,
-* toy environments,
-* connections to existing fields,
-* falsification experiments.
+The goal is not to prove a philosophy.
 
-The goal is not to define intelligence as optimization.
-
-The goal is to understand the mathematical conditions under which optimization becomes coherent agency.
+The goal is to create measurable predictions.
 
 ---
 
-## Final Axiom
+# The Core Axiom
 
 [
 \boxed{
@@ -362,3 +299,20 @@ Intelligence is invariant-preserving compression under self-modifying dynamics w
 }
 }
 ]
+
+---
+
+# Status
+
+🚧 Research framework in development
+
+Current focus:
+
+* formal definitions
+* toy environments
+* measurable benchmarks
+* falsification criteria
+
+The next step is not adding more complexity.
+
+The next step is testing whether the structure survives contact with reality.
